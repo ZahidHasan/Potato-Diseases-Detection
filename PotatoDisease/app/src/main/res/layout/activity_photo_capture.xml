@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoCaptureActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_horizontal"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/photoCapture2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            app:cardBackgroundColor="@color/bgblue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="25dp"
+                android:background="@color/bgblue"
+                android:src="@drawable/home_3" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="175dp"
+            android:layout_centerHorizontal="true"
+            android:text="অনুসন্ধান করুন"
+            android:textColor="@color/green"
+
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/button4"
+
+            android:layout_width="175dp"
+            android:layout_centerHorizontal="true"
+            android:text="বাতিল করুন"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button1"
+
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:text="ছবি তুলুন"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            >
+        </Button>
+
+    <Button
+        android:id="@+id/button2"
+
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:text="গ্যালারী থেকে ছবি সংযুক্ত করুন"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Result : "
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="600dp">
+
+    </TextView>
+
+
+
+</RelativeLayout>
